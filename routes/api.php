@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\API\Auth\LoginController;
+use App\Http\Controllers\Api\Auth\LoginController;
 use App\Http\Controllers\Api\ImageCropController;
 use App\Http\Controllers\Api\UserController;
 use Illuminate\Http\Request;
