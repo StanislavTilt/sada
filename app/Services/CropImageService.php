@@ -32,8 +32,8 @@ class CropImageService
         $source = \Tinify\fromFile($image);
         $resized = $source->resize(array(
             "method" => "fit",
-            "width" => 70,
-            "height" => 70
+            "width" => config('images.crop.width'),
+            "height" => config('images.crop.height')
         ));
         $fileName = md5(time() . rand(0,25)).'.jpg';
         $path = 'storage/'.$fileName;
