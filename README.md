@@ -4,4 +4,7 @@
 
 Документация postman в корне проекта
 
-Данные для авторизации
+#Данные для тестовой авторизации
+
+mail: testmail@mail.com
+password: password
