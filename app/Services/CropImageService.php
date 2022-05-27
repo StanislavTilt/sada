@@ -29,7 +29,7 @@ class CropImageService implements CropImageServiceInterface
      * @param $image
      * @return string
      */
-    public function crop($image)
+    public function crop($image): string
     {
         $source = \Tinify\fromFile($image);
         $resized = $source->resize(array(

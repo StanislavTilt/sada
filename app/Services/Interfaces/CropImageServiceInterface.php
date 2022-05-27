@@ -16,7 +16,7 @@ interface CropImageServiceInterface
 
     /**
      * @param $image
-     * @return mixed
+     * @return string
      */
-    public function crop($image);
+    public function crop($image): string;
 }
