@@ -9,18 +9,20 @@
 namespace App\Services;
 
 
+use App\Services\Interfaces\CropImageServiceInterface;
+
 /**
  * Class CropImageService
  * @package App\Services
  */
-class CropImageService
+class CropImageService implements CropImageServiceInterface
 {
     /**
      * CropImageService constructor.
      */
-    public function __construct()
+    public function __construct($api_key)
     {
-        \Tinify\setKey(config('tinify.api_key'));
+        \Tinify\setKey($api_key);
     }
 
     /**
